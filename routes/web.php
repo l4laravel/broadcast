@@ -21,6 +21,9 @@ Route::get('/event', function (){
 
 });
 
-Route::get('/listen',function (){
+Route::get('/listner',function (){
     return view('broadcastlistner');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
