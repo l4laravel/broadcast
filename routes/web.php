@@ -20,3 +20,7 @@ Route::get('/event', function (){
    event(new \App\Events\TaskEvent('working man ok'));
 
 });
+
+Route::get('/listen',function (){
+    return view('broadcastlistner');
+});
