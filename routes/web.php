@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/event', function (){
+   event(new \App\Events\TaskEvent('working man ok'));
+
+});
